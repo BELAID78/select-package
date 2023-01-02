@@ -1,0 +1,57 @@
+.select-input {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.select-input .select-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input .select-header .select-header-caret {
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: transform 0.2s linear;
+    width: 20px;
+    height: 20px;
+}
+
+.select-input .select-header .select-header-caret.up {
+    transform: rotate(180deg);
+}
+
+.select-input .select-content {
+    display: none;
+}
+
+.select-input .select-content.show {
+    display: block;
+}
+
+.select-input .select-content .select-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    max-height: 228px;
+    overflow: auto;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background: white;
+    width: 100%;
+    box-shadow:0px 1px 5px #cdcdcd
+}
+
+.select-input .select-content .select-list .select-list-item {
+    padding: 10px;
+}
+
+.select-input .select-content .select-list .select-list-item.active {
+    background-color: black;
+    color: white;
+}
